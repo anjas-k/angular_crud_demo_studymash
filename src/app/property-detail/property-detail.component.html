@@ -1,0 +1,14 @@
+<p>
+  property-detail works!
+  display id like {{propertyid}}
+
+</p>
+
+<br/><br/>
+<button class="btn btn-primary" (click)="onSelectNext()">Show Next Page</button>
+<br/>
+<br/>
+<button class="btn btn-primary" routerLink="/propertydetail/1">1</button>
+<button class="btn btn-primary" routerLink="/propertydetail/2">2</button>
+<button class="btn btn-primary" routerLink="/propertydetail/3">3</button>
+<button class="btn btn-primary" [routerLink]="['/propertydetail','4']" >4</button> 

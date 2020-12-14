@@ -1,0 +1,36 @@
+<!--<p>
+  add-property works!
+  <button class="btn btn-primary" (click)="onBack()">Back</button>
+</p>-->
+<div class="card">
+  <div class="card-header">
+    Add New Property
+  </div>
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit(Form)" #Form="ngForm"> <!--we mentioned viewchild in addproperty.ts..so we can remove Form from onSubmit as a parameter-->
+      <div class="form-group col-12">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" #propname="ngModel" ngModel name="name" required
+         minlength="5" >
+        <span *ngIf="!propname.valid && propname.touched" class="error-block">
+          <span *ngIf="propname.errors.required">please provide name</span>
+        
+        <span *ngIf="propname.errors.minlength">atleast  character is required</span>
+      </span>
+      </div>
+      <div class="form-group col-12">
+        <label for="name">Type</label>
+        <input type="text" class="form-control" ngModel name="type">
+      </div>
+      <div class="form-group col-12">
+        <label for="name">Value</label>
+        <input type="text" class="form-control" ngModel name="value">
+      </div>
+      <div class="form-group col-12">
+        <button [disabled]="!Form.valid" type="submit" class="btn btn-primary mr-3">Save</button>
+        <button type="reset" class="btn btn-primary">cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+

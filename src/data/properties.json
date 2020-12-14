@@ -1,0 +1,58 @@
+[{
+    "id":1,
+    "SellRent":2,
+    "name":"Birla House",
+    "type":"House",
+ 
+    "value":12000,
+    "Image":"prop2"
+  },
+{
+  "id":2,
+  "SellRent":1,
+  "name":"Skyline",
+  "type":"flat",
+  
+  "value":15000,
+  "Image":"prop3"
+
+},
+{
+  "id":3,
+  "SellRent":1,
+  "name":"Ultra House",
+  "type":"House",
+ 
+  "value":25000,
+  "Image":"prop1"
+
+},
+{
+  "id":4,
+  "SellRent":1,
+  "name":"Techs ",
+  "type":"Villa",
+
+  "value":22000
+ 
+
+},
+{
+  "id":5,
+  "SellRent":2,
+  "name":"Blans House",
+  "type":"House",
+  
+  "value":18000,
+  "Image":"prop5"
+
+},
+{
+  "id":6,
+  "SellRent":1,
+  "name":"Carrier House",
+  "type":"House",
+ 
+  "value":38000,
+  "Image":"prop6"
+}]

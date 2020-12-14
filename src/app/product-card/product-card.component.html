@@ -1,0 +1,25 @@
+<div class="card" style="width: 18rem;">
+    <div class="image-wrapper">
+        <img *ngIf="product.Image"class="card-img-top" src="/assets/images/{{product.Image}}.jpg">
+        <img *ngIf="!product.Image"class="card-img-top" src="/assets/images/defaultprop.jpg"> <!--ngif 
+        tags used to make default image there-->
+            <ul class="membicon animate">
+                <li >
+                    <button class="btn btn-primary" routerLink="/propertydetail/{{product.id}}">E</button>
+                </li>
+                <li ><button class="btn btn-primary">Z</button></li>
+            </ul>
+    </div>    
+            <div class="card-body">
+                <h1 class="card-title">{{product.name}}</h1>
+                <h2 class="card-title">{{product.type}}</h2>
+                <h4 class="card-text">{{product.value}}</h4>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+    
+</div>
+
+
+
+      
+

@@ -1,0 +1,46 @@
+
+ul li{
+    display: inline;
+    padding-left: 20px;
+}
+.card img:hover{
+    transform: scale(1.1,1.1);
+    transition-timing-function: ease-out;
+    transition-duration:500ms ;
+    opacity: 0.7;
+    height: 250px;
+
+}
+.image-wrapper{
+    overflow: hidden;
+    position: relative;
+   
+  
+}
+.card img{
+    transform: scale(1,1);
+    transition-timing-function: ease-out;
+    transition-duration:500ms ;
+    height: 250px;
+
+
+}
+.membicon{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right: auto;
+    opacity: 0;
+}
+.image-wrapper:hover .membicon{
+    bottom: 0;
+    opacity: 1;
+}
+.animate{
+    transition: all 0.3s ease-in-out;
+}
+h3{
+    position: fixed;
+}
